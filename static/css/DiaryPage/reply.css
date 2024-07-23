@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Pretendard-Regular', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #2F4858;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,9 +17,10 @@ body {
 }
 
 .container {
+  display: flex;
   position: relative;
   width: 375px;
-  height: 667px;
+  height: 100vh;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -29,15 +30,15 @@ body {
 .frame-image {
   position: absolute;
   top: 60px;
-  left: 20px;
+  left: 21px;
   width: 335px;
   height: auto;
 }
 
 .title {
   position: absolute;
-  top: 29px;
-  left: 33px;
+  top: 108px;
+  left: 64px;
   font-size: 24px;
   font-weight: bold;
   color: #333;
@@ -45,20 +46,19 @@ body {
 
 .date {
   position: absolute;
-  top: 58px;
-  left: 33px;
-  font-size: 16px;
+  top: 136px;
+  left: 64px;
+  font-size: 14px;
   color: #333;
 }
 
 .reply-text {
   position: absolute;
-  top: 58px;
-  left: 44.5px;
+  top: 182px; 
+  left: 51px;
   width: 251px;
   height: 400px;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   overflow-y: scroll;
   font-size: 14px;
