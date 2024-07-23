@@ -22,8 +22,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web App Design</title>
+    <title>Diary Login Screen</title>
     <link rel="stylesheet" href="../../static/css/DiaryPage/access.css" />
+    <script>
+        // 페이지 로드 후 2초 뒤에 writeDiary.html로 이동
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = 'writeDiary.html';
+            }, 2000);
+        };
+    </script>
 </head>
 <body>
     <div class="container">
