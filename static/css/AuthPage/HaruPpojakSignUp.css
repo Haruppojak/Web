@@ -19,64 +19,62 @@ body {
 /* 하루뽀짝 로고 부분 */
 .HPIntroBox {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 1s ease-in-out;
 }
+
 .HPIcon {
     color: #FFF23A;
 }
+
 .HPTitle {
     color: white;
     margin-bottom: 5vh;
 }
 
-/* 하루뽀짝 코멘트 부분 */
-.HPIntroComment {
-    color: white;
-    width: 80vw;
-}
-.HPIntroComment div {
-    margin-bottom: 1vh;
-    font-size: 1.1rem;
-}
-.MiracleEveningTxt {
-    color: #FFF23A;
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 로그인 바 */
-.LoginBars {
+.FirstForm {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     transition: opacity 1s ease-in-out;
 }
-.LocalLoginBar {
-    background-color: white;
-    width: 300px;
-    height: 45px;
-    border-radius: 7px;
+
+.SecondForm {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    transition: left 1s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
 }
 
-/* Form 전체 설정 */
-input[type="text"], input[type="submit"], input[type="password"] {
-    width: 70px;
+input[type="text"], input[type="submit"], input[type="password"], input[type="button"], input[type="email"] {
     box-sizing: border-box;
+    width: 300px;
+    height: 45px;
     padding: 10px;
+    margin: 1vh;
     border: 1px solid #ccc;
+    border-radius: 10px;
     font-size: 14px;
 }
 
-.show-login-bars {
-    opacity: 1;
-}
-
-.move-up {
-    transform: translate(-50%, calc(-50% - 15vh));
+.hidden {
+    display: none;
 }
